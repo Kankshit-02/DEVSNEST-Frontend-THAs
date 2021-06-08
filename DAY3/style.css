@@ -1,0 +1,41 @@
+
+
+.container{
+	margin: 0px auto 0px; 
+	background: #FCF6F5FF;
+	max-width:800px;
+	padding:40px;
+	font-family: "Lato",sans-serif;
+	font-size: 20px;
+	border:1px solid blue;
+}
+
+.Subhead{
+	font-size: 20px;
+	color:#89ABE3FF;
+}
+
+.left ,
+  .right {
+    vertical-align: top;
+    display: inline-block;
+  }
+  
+  .left {
+    width: 60%;    
+  }
+  
+  .right {
+    tex-align: right;
+    width: 30%;    
+  }
+
+ body{
+ 	min-height: 100%;  
+  
+  
+  
+  
+  /*padding-bottom: 50px;*/
+ 	
+ }
