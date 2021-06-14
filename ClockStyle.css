@@ -1,0 +1,60 @@
+.all{
+	height:743px;
+	
+	margin:-15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image:url("https://images3.alphacoders.com/993/thumb-1920-993071.jpg")
+
+}
+.body{                          /*FRAME OF THE CLOCK */
+	width: 450px;
+	height: 450px;
+	background-color: rgb(100,200,100);
+	border: 3px solid #173042;               
+	border-radius: 48%;
+	opacity: 0.2;
+	box-shadow: 5px 10px 10px 2px #888888;s
+}
+
+
+.hour{
+	position: absolute;
+	height: 20%;
+	width: 2%; 
+	background-color: #173042;
+	transform: translate(57px,-35px) rotate(60deg);
+	opacity: 0.6;
+	border-radius: 30%;
+}
+
+.min{
+	position: absolute;
+	height:30%;
+	width:20px;
+	background-color: #173042;
+	transform: translate(0,-110px);
+opacity: 0.6;
+	border-radius: 30%;
+}
+
+.sec{
+	position: absolute;
+	height:28%;
+	width:5px;
+	background-color: #173042;
+	transform: translate(-18px,100px) rotate(190deg);
+opacity: 0.6;
+}
+
+
+
+.center{
+	position:absolute;
+	height:30px;
+	width:30px;
+	border-radius:50%;
+	background-color: #173042;
+
+}
