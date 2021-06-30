@@ -1,0 +1,21 @@
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	background: red;
+	
+
+}
+
+.button{
+	font-size: 30px;
+	padding:15px 32px;
+}
+
+.input-label{
+
+	font-family: roboto ,sans-serif;
+	font-size: 25px;
+}
