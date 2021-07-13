@@ -1,0 +1,48 @@
+body{
+	font-family: roboto ;
+}
+
+.container{ 
+	display: block;
+	margin:auto;	
+	
+	border:1px black;
+	padding:10px;
+}
+
+
+.btn-menu{
+	margin:auto;
+	height: 40px;
+	width: 40px;
+	border: 0px;
+	cursor: pointer;
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.btn-menu > div{
+	height: 5px;
+	width : 35px;
+	margin: auto 0px;
+	border-radius: 50%;
+	background: red;
+	transform-origin:left;
+	transition : 100ms all ease-in;
+}
+
+.btn-menu:hover > div:first-child{
+	
+	transform: rotate(45deg);
+}
+
+.btn-menu:hover > div:nth-child(2){
+	opacity: 0;
+}
+
+.btn-menu:hover > div:last-child{
+	
+	transform: rotate(-45deg);
+}
