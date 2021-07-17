@@ -1,0 +1,38 @@
+*{
+    font-family: "Roboto" , sans-serif;
+    background:#90e0ef ;
+}
+::selection{
+    user-select: none;
+}
+body{
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.upper{
+    text-align: center;
+    font-size: 150%;   
+}
+
+.level{
+    background: #00b4d8;
+    display: inline-block;
+    border: 1px solid #00b4d8;
+    border-radius: 4%;
+}
+
+.lower{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;    
+}
+.unhide{
+    color: #caf0f8;
+}
+.child{
+    background: #023e8a;
+    font-size: 200%;
+    height: 220px;
+    width: 220px;
+}
