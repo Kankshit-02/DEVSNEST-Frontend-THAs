@@ -1,46 +1,54 @@
-let doublearr=["A", "B", "C", "D", "E", "F","A", "B", "C", "D", "E", "F"];
+const cards =document.querySelectorAll('.cards');
+
+let OneflippedCard = false;
+let lock = false;
+let firstCard, secondCard;
+var moves = 0
 
 
-randomm =(item)=>{
-    return Math.floor(Math.random()*item.length)
-}
+function flipCard(){
     
-let set=document.querySelector('.lower');
-for(let i=0;i<12;i++){
-    const newDiv = document.createElement(`div`);
-    newDiv.className= 'child';
-    newDiv.classId= i;
-    newDiv.style.height="170px";
-    newDiv.style.h1=i;
-    newDiv.style.width="200px";
-    newDiv.style.margin="10px";
-    newDiv.innerHTML=doublearr[randomm(doublearr)];
-    newDiv.style.backgroundColor= "black";
-    set.append(newDiv);
+    if(lock) return;
+    if(this === firstCard) return;
+    
+    this.classList.add('flipped');
+    if(!OneflippedCard){
+        OneflippedCard=true;
+        firstCard=this;
+        return;
+    }
+    secondCard = this;
+    lock = true;
+    
+    match();
 }
-let first;
-let second;
-let count=0;
-let correct=0;
-let chill=document.querySelectorAll('.child');
-chill.forEach(element => {
-    element.addEventListener('click',()=>{
-        element.classList.add("unhide");
-        count++;
-        moves.innerHTML=count;
-        if(count%2!=0){
-            first=element;
-        }else{
-            if(first.innerHTML!=element.innerHTML){
-                first.classList.remove("unhide");
-                element.classList.remove("unhide");
-                console.log("NO");
-            }
-            else{
-                correct++;
-                console.log("correct");
-            }
-        }
-        correc.innerHTML=correct;
-    })
-});
+
+function match(){
+    moves+=1;
+    document.getElementById('jsmoves').innerText = moves
+    firstCard.dataset.name === secondCard.dataset.name ? disableCards()  : unflipCards();
+}
+
+function  disableCards(){
+    
+    firstCard.removeEventListener('click',flipCard);
+    secondCard.removeEventListener('click',flipCard);
+    reset();
+}
+
+function unflipCards(){
+    setTimeout(()=> {
+        firstCard.classList.remove('flipped');
+        secondCard.classList.remove('flipped');
+        reset();
+    },1500)
+
+}
+
+function reset(){
+    OneflippedCard= false;
+    lock=false;
+    firstCard=null;
+    secondCard= null;
+}
+cards.forEach(card => card.addEventListener('click',flipCard));

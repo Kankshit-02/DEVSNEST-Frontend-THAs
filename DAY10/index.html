@@ -4,21 +4,139 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="./style.css">
-    
+
+    <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <section class="upper">
-            <h1>Memory Game</h1>
-            <div class="level">Moves = <span id="moves">0</span></div>
-            <div class="level">Correct = <span id="correct=">0</span></div>
-        </section>
-        <section class="lower">
-        </section>
+    <div class="wraper">
+        <div class="info">
+            <span class="moves">Moves:<span id="jsmoves">1</span></span>
+        </div>
+        <div class="cardholder" id='main'>
+          
+            <div class="cards" id='1' data-name="cracked-alien-skull">
+                <div class="front">
+                    <img src="./imgs/interstellar-path.png" alt="interstellar-path" class='responsive-img'>                </div>
+                <div class="back">
+                    <img src="./imgs/cracked-alien-skull.png" alt="cracked-alien-skull" class='responsive-img'>
+                </div>
+            </div>
+            <div class="cards" id='2'data-name="id-card">
+                
+                <div class="front">
+                    <img src="./imgs/interstellar-path.png" alt="interstellar-path" class='responsive-img'>
+                </div>
+                <div class="back">
+                    <img src="./imgs/id-card.png " alt="id-card" class='responsive-img'>              
+                </div>
+            </div>
+            <div class="cards" id='3'data-name="cracked-alien-skull">
+                
+                <div class="front">
+                    <img src="./imgs/interstellar-path.png" alt="interstellar-path" class='responsive-img'>                </div>
+                <div class="back">
+                    <img src="./imgs/cracked-alien-skull.png" alt="cracked-alien-skull" class='responsive-img'>                
+                </div>
+            </div>
+            <div class="cards"  id='4' data-name="finger-print">
+                
+                <div class="front">
+                    <img src="./imgs/interstellar-path.png" alt="interstellar-path" class='responsive-img'>                </div>
+                <div class="back">
+                    <img src="./imgs/finger-print.png" alt="finger-print" class='responsive-img'>                
+                </div>
+            </div>
+            <div class="cards" id='5' data-name="frankenstein-creature">
+                
+                <div class="front">
+                    <img src="./imgs/interstellar-path.png" alt="interstellar-path" class='responsive-img'>                </div>
+                <div class="back">
+                    <img src="./imgs/frankenstein-creature.png" alt="frankenstein-creature" class='responsive-img'>                
+                </div>
+            </div>
+            <div class="cards" id='6' data-name="frankenstein-creature">
+                
+                <div class="front">
+                    <img src="./imgs/interstellar-path.png" alt="interstellar-path" class='responsive-img'>                </div>
+                <div class="back">
+                    <img src="./imgs/frankenstein-creature.png" alt="frankenstein-creature" class='responsive-img'>                
+                </div>
+            </div>
+            <div class="cards" id='7' data-name="finger-print">
+                
+                <div class="front">
+                    <img src="./imgs/interstellar-path.png" alt="interstellar-path" class='responsive-img'>                </div>
+                <div class="back">
+                    <img src="./imgs/finger-print.png" alt="finger-print" class='responsive-img'>                
+                </div>
+            </div>
+            <div class="cards" id='8' data-name="idea">
+                
+                <div class="front">
+                    <img src="./imgs/interstellar-path.png" alt="interstellar-path" class='responsive-img'>                </div>
+                <div class="back" >
+                    <img src="./imgs/idea.png" alt="idea" class='responsive-img'>                </div>
+            </div>
+            <div class="cards" id='9' data-name="id-card">
+                
+                <div class="front">
+                    <img src="./imgs/interstellar-path.png" alt="interstellar-path" class='responsive-img'>                </div>
+                <div class="back">
+                    <img src="./imgs/id-card.png" alt="id-card" class='responsive-img'>                </div>
+            </div>
+            <div class="cards" id='10' data-name="idea">
+                
+                <div class="front">
+                    <img src="./imgs/interstellar-path.png" alt="interstellar-path" class='responsive-img'>                </div>
+                <div class="back">
+                    <img src="imgs/idea.png" alt="idea" class='responsive-img'>                </div>
+            </div>
+            <div class="cards" id='11' data-name="mars-pathfinder">
+                
+                <div class="front">
+                    <img src="./imgs/interstellar-path.png" alt="interstellar-path" class='responsive-img'>                </div>
+                <div class="back">
+                    <img src="./imgs/mars-pathfinder.png" alt="mars-pathfinder" class='responsive-img'>                </div>
+            </div>
+            <div class="cards" id='12' data-name="enrage">
+                
+                <div class="front">
+                    <img src="./imgs/interstellar-path.png" alt="interstellar-path" class='responsive-img'>                </div>
+                <div class="back">
+                    <img src="./imgs/enrage.png" alt="enrage" class='responsive-img'>                </div>
+            </div>
+            <div class="cards" id='13' data-name="inspiration">
+                
+                <div class="front">
+                    <img src="./imgs/interstellar-path.png" alt="interstellar-path" class='responsive-img'>                </div>
+                <div class="back">
+                    <img src="./imgs/inspiration.png" alt="inspiration" class='responsive-img'>                </div>
+            </div>
+            <div class="cards"id='14' data-name="enrage">
+                
+                <div class="front">
+                    <img src="./imgs/interstellar-path.png" alt="interstellar-path" class='responsive-img'>                </div>
+                <div class="back">
+                    <img src="./imgs/enrage.png" alt="enrage" class='responsive-img'>                </div>
+            </div>
+            <div class="cards" id='15' data-name="mars-pathfinder">
+                
+                <div class="front">
+                    <img src="./imgs/interstellar-path.png" alt="interstellar-path" class='responsive-img'>                </div>
+                <div class="back">
+                    <img src="./imgs/mars-pathfinder.png" alt="mars-pathfinder" class='responsive-img'>                </div>
+            </div>
+            <div class="cards" id='16' data-name="inspiration">
+                
+                <div class="front">
+                    <img src="./imgs/interstellar-path.png" alt="interstellar-path" class='responsive-img'>                </div>
+                <div class="back">
+                    <img src="./imgs/inspiration.png" alt="inspiration" class='responsive-img'>                </div>
+            </div>
+            
+        </div>
     </div>
-
+    <script src="index.js"></script>
 </body>
-<script src="./index.js"></script>
 </html>
