@@ -1,7 +1,7 @@
 const seats = document.querySelector('.seats')
 var booked  = 0
-var vacant=36
-for(i=0;i<36;i++){
+var vacant=96
+for(i=0;i<96;i++){
 	let box = document.createElement('div');
 	box.setAttribute('class','box')
     box.setAttribute('id',i)
